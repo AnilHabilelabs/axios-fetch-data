@@ -10,13 +10,12 @@ const getData = async () => {
     console.log(response);
 
     content.innerHTML = (response.data).map(element =>
-      `<div>
+      `
             <tr>
                 <td>${element['userId']}</td>
                 <td>${element['id']}</td>
                 <td>${element['title']}</td>
             </tr>
-          </div>
         `
     ).join('');
 
